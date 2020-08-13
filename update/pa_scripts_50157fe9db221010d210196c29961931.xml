@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_scripts">
+    <pa_scripts action="INSERT_OR_UPDATE">
+        <arguments>sys_created_on</arguments>
+        <description/>
+        <name>filter out by dates</name>
+        <script><![CDATA[var diff=function(x,y){return y.getNumericValue() - x.getNumericValue();};
+var days=function(x,y){return diff(x,y)/(24*60*60*1000);};
+var today = GlideDateTime();
+days(current.sys_created_on.getGlideObject(), today);]]></script>
+        <sys_class_name>pa_scripts</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-10 23:31:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>50157fe9db221010d210196c29961931</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>filter out by dates</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>pa_scripts_50157fe9db221010d210196c29961931</sys_update_name>
+        <sys_updated_by>sergio.donoso</sys_updated_by>
+        <sys_updated_on>2020-08-11 01:19:55</sys_updated_on>
+        <table>task</table>
+    </pa_scripts>
+    <sys_translated_text action="delete_multiple" query="documentkey=50157fe9db221010d210196c29961931"/>
+</record_update>
